@@ -5,4 +5,4 @@ deps:
 	pip install -r test_requirements.txt
 
 test:
-	PYTHONPATH=. pytest  --verbose -s
+	PYTHONPATH=. py.test --verbose -s

@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-	            sh 'make test || true'
+	            sh 'make deps'
+	            sh 'make test'
         	}
         }
     }

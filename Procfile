@@ -1,1 +1,1 @@
-web: gunicorn hello_world:app
+web: PYTHONPATH=$PYTHONPATH:. gunicorn hello_world:app

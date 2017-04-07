@@ -14,11 +14,6 @@ pipeline {
         stage('Test') {
             steps {
 	            sh 'make test_with_cov'
-                step([$class: 'XUnitBuilder',
-                    thresholds: [[$class: 'FailedThreshold', failureThreshold: '1']],
-                    tools: [[$class: 'JUnitType', pattern: 'test_results.xml']]]
-                )
         	}
         }
-
 }

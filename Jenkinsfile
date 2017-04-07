@@ -21,7 +21,7 @@ pipeline {
                     // Keeping this threshold so that overwhelming failures are guaranteed
                     //     to still fail the build
                     [$class: 'FailedThreshold', failureThreshold: '10']],
-tools: [[$class: 'JUnitType', pattern: 'reports/**']]])
+tools: [[$class: 'JUnitType', pattern: 'test_results.xml']]])
         	}
         }
     }

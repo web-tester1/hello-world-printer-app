@@ -11,6 +11,9 @@ lint:
 test:
 	PYTHONPATH=. py.test --verbose -s
 
+test_with_cov:
+	PYTHONPATH=. py.test -s --cov=.  --junit-xml=test_results.xml
+
 docker_build:
 	docker build -t hello-wold-printer .
 

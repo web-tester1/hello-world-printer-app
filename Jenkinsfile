@@ -16,4 +16,5 @@ pipeline {
 	            sh 'make test_with_cov'
         	}
         }
+    }
 }

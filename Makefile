@@ -14,6 +14,9 @@ test:
 test_with_cov:
 	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
 
+run:
+	PYTHONPATH=. FLASK_APP=hello_world flask run
+
 docker_build:
 	docker build -t hello-wold-printer .
 
